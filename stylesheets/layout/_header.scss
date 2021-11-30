@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header__top {
+  padding: 18px 0;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.links,
+.header__contacts,
+.links__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1e2e36;
+}
+
+.menu__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.links__title,
+.header__phone {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+}
+
+.header__phone {
+	margin-left: 60px;
+}

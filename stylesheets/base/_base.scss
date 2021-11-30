@@ -1,0 +1,41 @@
+// This file contains very basic styles.
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// main styles for the layout
+
+body {
+	font-family: 'Proxima Nova Rg';
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1817px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+
