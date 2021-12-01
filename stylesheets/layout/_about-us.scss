@@ -1,0 +1,28 @@
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about__text {
+	font-family: 'Proxima Nova Rg';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+  margin-bottom: 15px;
+
+  span {
+	  
+  }
+
+  &:last-child {
+	  margin-bottom: 0;
+  }
+}
+
+.about__card {
+	max-width: 791px;
+	padding: 50px 30px 50px 50px;
+	background: #FFFFFF;
+	text-align: left;
+}

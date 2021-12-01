@@ -202,6 +202,31 @@ body.lock {
 /**
  * Basic typography style for copy text
  */
+.sec-title {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-align: center;
+  color: #1e2e36;
+  display: inline;
+  position: relative;
+}
+
+.sec-title:before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 50px;
+  background: #44C697;
+  z-index: -1;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -622,6 +647,31 @@ body.lock {
   .header__bottom-logo {
     top: 25%;
   }
+}
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about__text {
+  font-family: 'Proxima Nova Rg';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+  margin-bottom: 15px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.about__card {
+  max-width: 791px;
+  padding: 50px 30px 50px 50px;
+  background: #FFFFFF;
+  text-align: left;
 }
 
 .btn-primary {

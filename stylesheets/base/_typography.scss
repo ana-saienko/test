@@ -2,3 +2,27 @@
  * Basic typography style for copy text
  */
 
+.sec-title {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-align: center;
+  color: #1e2e36;
+  display: inline;
+
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 50%;
+	 transform: translateY(-50%);
+    width: 20px;
+    height: 50px;
+	 background: #44C697;
+	 z-index: -1;
+  }
+}
