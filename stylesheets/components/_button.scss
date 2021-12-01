@@ -1,3 +1,37 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn-primary {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 46px;
+  background: #44c697;
+  border-radius: 3px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid #44c697;
+    color: #44c697;
+  }
+
+  @media (max-width: $md3+px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $md4+px) {
+    text-align: center;
+    padding: 0 25px;
+    font-size: 12px;
+  }
+}

@@ -1,9 +1,10 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
+// HEADER TOP
 // -----------------------------------------------------------------------------
 
 .header__top {
   padding: 18px 0;
+  border-bottom: 1px solid #1e2e365d;
 }
 
 .header__menu-list {
@@ -14,6 +15,11 @@
 .menu__list {
   display: flex;
   align-items: center;
+
+  @media (max-width: $md3+px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 .links,
@@ -23,10 +29,38 @@
   align-items: center;
 }
 
+.links {
+  @media (max-width: $md3+px) {
+    margin-bottom: 15px;
+  }
+  @media (max-width: $md4+px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.links__list {
+  @media (max-width: $md4+px) {
+    margin-bottom: 10px;
+  }
+}
+
+.header__contacts {
+  @media (max-width: 1300px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: $md3+px) {
+    flex-direction: column;
+  }
+}
+
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
 }
 
 .menu__link {
@@ -36,13 +70,45 @@
   line-height: 125%;
   text-transform: uppercase;
   color: #1e2e36;
+
+  @media (max-width: $md3+px) {
+    font-size: 14px;
+  }
 }
 
 .menu__item {
   margin-right: 15px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: #44c697;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+  @media (max-width: $md3+px) {
+    margin-bottom: 10px;
+  }
+}
+
+.links__title {
+  @media (max-width: $md4+px) {
+    margin-bottom: 10px;
   }
 }
 
@@ -53,8 +119,199 @@
   font-size: 18px;
   line-height: 125%;
   color: #1e2e36;
+
+  @media (max-width: $md3+px) {
+    font-size: 14px;
+  }
 }
 
 .header__phone {
-	margin-left: 60px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: #44c697;
+    .header__phone-icon {
+      fill: none;
+      stroke: #44c697;
+    }
+
+    .header__phone-dropdown {
+      fill: #44c697;
+    }
+  }
+
+  @media (max-width: $md3+px) {
+    margin-left: 0;
+  }
+}
+
+.links__item {
+  padding: 0 13px;
+}
+// -----------------------------------------------------------------------------
+// SVGS in header
+// -----------------------------------------------------------------------------
+
+.links__link-icon,
+.header__phone-icon,
+.header__phone-dropdown {
+  width: 20px;
+  height: 20px;
+  fill: #1e2e36;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: #44c697;
+  }
+
+  @media (max-width: $md3+px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.header__phone-icon {
+  fill: none;
+  stroke: #1e2e36;
+  margin-right: 13px;
+}
+
+.header__phone-dropdown {
+  width: 8px;
+  height: 13px;
+  margin-left: 13px;
+}
+
+.header__bottom-carticon {
+  width: 30px;
+  height: 30px;
+  fill: #1e2e36;
+  margin-right: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown__item-icon {
+  width: 8px;
+  height: 13px;
+  fill: #1e2e36;
+  margin-left: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+// -----------------------------------------------------------------------------
+// HEADER BOTTOM
+// -----------------------------------------------------------------------------
+
+.dropdown__item,
+.header__bottom-cart {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1e2e36;
+
+  @media (max-width: $md3+px) {
+    font-size: 14px;
+  }
+}
+
+.header__bottom {
+  position: relative;
+  padding: 27px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1700px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 1125px) {
+    flex-direction: column;
+  }
+}
+
+.dropdown {
+  display: flex;
+  margin-right: 15px;
+
+  @media (max-width: 1125px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 620px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.dropdown__item {
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: #44c697;
+    cursor: pointer;
+
+    .dropdown__item-icon {
+      fill: #44c697;
+    }
+  }
+
+  @media (max-width: 620px) {
+    margin-bottom: 15px;
+  }
+}
+
+.header__bottom-group {
+  display: flex;
+}
+
+.header__bottom-cart {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: #44c697;
+
+    .header__bottom-carticon {
+      fill: #44c697;
+    }
+  }
+
+  @media (max-width:$md4+px){
+     margin-right: 15px; 
+  }
+}
+
+// -----------------------------------------------------------------------------
+// HEADER BOTTOM logo
+// -----------------------------------------------------------------------------
+
+.header__bottom-logo {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+  @media (max-width: 1700px) {
+    top: 30%;
+  }
+
+  @media (max-width: $md3+px) {
+    top: 25%;
+  }
 }

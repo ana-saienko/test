@@ -1,0 +1,885 @@
+@charset "UTF-8";
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: .5em;
+  fill: red;
+}
+
+/*
+<svg class="icon">
+  <use xlink:href="sprite.svg#arrow-down"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#bed-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#chair-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#facebook"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#instagram"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#kitchen-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#location-footer"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#shalving-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#shopping-cart"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#smartphone"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#sofa-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#telegram"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#wardrobe-tab"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#Arrow Left"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#valendar-footer"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="sprite.svg#Arrow Right"></use>
+</svg>
+
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1817px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.header__top {
+  padding: 18px 0;
+  border-bottom: 1px solid #1e2e365d;
+}
+
+.header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .menu__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.links,
+.header__contacts,
+.links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .links {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .links__list {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__contacts {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .header__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__link {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1e2e36;
+}
+
+@media (max-width: 767.98px) {
+  .menu__link {
+    font-size: 14px;
+  }
+}
+
+.menu__item {
+  margin-right: 15px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:after {
+  content: "";
+  position: absolute;
+  background: #44c697;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__item:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .menu__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .links__title {
+    margin-bottom: 10px;
+  }
+}
+
+.links__title,
+.header__phone {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+}
+
+@media (max-width: 767.98px) {
+  .links__title,
+  .header__phone {
+    font-size: 14px;
+  }
+}
+
+.header__phone {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__phone:hover {
+  cursor: pointer;
+  color: #44c697;
+}
+
+.header__phone:hover .header__phone-icon {
+  fill: none;
+  stroke: #44c697;
+}
+
+.header__phone:hover .header__phone-dropdown {
+  fill: #44c697;
+}
+
+@media (max-width: 767.98px) {
+  .header__phone {
+    margin-left: 0;
+  }
+}
+
+.links__item {
+  padding: 0 13px;
+}
+
+.links__link-icon,
+.header__phone-icon,
+.header__phone-dropdown {
+  width: 20px;
+  height: 20px;
+  fill: #1e2e36;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.links__link-icon:hover,
+.header__phone-icon:hover,
+.header__phone-dropdown:hover {
+  fill: #44c697;
+}
+
+@media (max-width: 767.98px) {
+  .links__link-icon,
+  .header__phone-icon,
+  .header__phone-dropdown {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.header__phone-icon {
+  fill: none;
+  stroke: #1e2e36;
+  margin-right: 13px;
+}
+
+.header__phone-dropdown {
+  width: 8px;
+  height: 13px;
+  margin-left: 13px;
+}
+
+.header__bottom-carticon {
+  width: 30px;
+  height: 30px;
+  fill: #1e2e36;
+  margin-right: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown__item-icon {
+  width: 8px;
+  height: 13px;
+  fill: #1e2e36;
+  margin-left: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown__item,
+.header__bottom-cart {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1e2e36;
+}
+
+@media (max-width: 767.98px) {
+  .dropdown__item,
+  .header__bottom-cart {
+    font-size: 14px;
+  }
+}
+
+.header__bottom {
+  position: relative;
+  padding: 27px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1700px) {
+  .header__bottom {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .header__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+}
+
+@media (max-width: 1125px) {
+  .dropdown {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .dropdown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.dropdown__item {
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown__item:last-child {
+  margin-right: 0;
+}
+
+.dropdown__item:hover {
+  color: #44c697;
+  cursor: pointer;
+}
+
+.dropdown__item:hover .dropdown__item-icon {
+  fill: #44c697;
+}
+
+@media (max-width: 620px) {
+  .dropdown__item {
+    margin-bottom: 15px;
+  }
+}
+
+.header__bottom-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__bottom-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__bottom-cart:hover {
+  cursor: pointer;
+  color: #44c697;
+}
+
+.header__bottom-cart:hover .header__bottom-carticon {
+  fill: #44c697;
+}
+
+@media (max-width: 479.98px) {
+  .header__bottom-cart {
+    margin-right: 15px;
+  }
+}
+
+.header__bottom-logo {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+@media (max-width: 1700px) {
+  .header__bottom-logo {
+    top: 30%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__bottom-logo {
+    top: 25%;
+  }
+}
+
+.btn-primary {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 46px;
+  background: #44c697;
+  border-radius: 3px;
+  height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border: 1px solid #44c697;
+  color: #44c697;
+}
+
+@media (max-width: 767.98px) {
+  .btn-primary {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .btn-primary {
+    text-align: center;
+    padding: 0 25px;
+    font-size: 12px;
+  }
+}
+
+/*
+==========================================================
+В Хедере нужно чтобы была такая обертка:
+
+.header__menu
+
+внутри сам бургер 
+
+<div class="icon-menu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+и ниже пункты меню, которые уберутся в бургер
+
+nav.menu__body
+  ul
+    li
+      a
+
+*/
+@media (max-width: 767.98px) {
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu__body.burger-active {
+    left: 0;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #000;
+  }
+  .header__menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+  .header__menu-item {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .icon-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.664);
+  }
+  .icon-menu span:first-child {
+    top: 0px;
+  }
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+  .icon-menu.burger-active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .icon-menu.burger-active span:first-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .icon-menu.burger-active span:last-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
+
+/*
+.menu {
+  &__list {
+    @media (min-width: $md3+px) {
+      display: flex;
+      align-items: center;
+    }
+
+    & > li {
+      position: relative;
+      margin: 0px 0px 0px 20px;
+
+      @media (min-width: $md3+px) {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  // верстка самих пунктов меню
+
+  &__link {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  &__sub-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    padding: 15px;
+    min-width: 200px;
+
+    @media (min-width: $md3+px) {
+      transform: translate(0px, 10%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease 0s;
+      pointer-events: none;
+    }
+  }
+
+  &__sub-item {
+    margin: 0px 0px 10px 0px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__sub-link {
+    color: #fff;
+  }
+
+  &__arrow {
+	  display: none;
+  }
+}
+
+
+==========================================================
+если устройство - ноут или комп, то подменю показывается как обычно при наведении мышкой
+если устройство - телефон, появляется стрелочка, которая переворачивается при клике
+
+
+body._pc .menu__list > li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body._touch .menu__list > li {
+	display: flex;
+	align-items: center;
+}
+
+body._touch .menu__link {
+	flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+	display: block;
+	margin: 0px 0px 0px 5px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #fff;
+	transition: transform 0.3s ease 0s;
+}
+
+body._touch .menu__list > li.active .menu__sub-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+ }
+
+ body._touch .menu__list > li.active .menu__arrow {
+	 transform: rotate(-180deg);
+ }
+*/
