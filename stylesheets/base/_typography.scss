@@ -25,4 +25,32 @@
 	 background: #44C697;
 	 z-index: -1;
   }
+
+  @media (max-width:$md3+px){
+     font-size: 30px; 
+  }
+}
+
+.text-p {
+  font-family: "Proxima Nova Rg";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+
+  @media (max-width: 1314px) {
+    font-size: 15px;
+  }
+
+  @media (max-width:$md3+px){
+     font-size: 12px; 
+  }
+}
+
+.card-sec {
+  background: #ffffff;
+  text-align: left;
+  border-right: 15px solid #44c697;
+  border-radius: 0px 3px 3px 0px;
+
 }

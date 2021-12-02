@@ -36,6 +36,10 @@ body {
 	max-width: 1817px;
 	padding: 0 50px;
 	margin: 0 auto;
+
+	@media (max-width:$md3+px){
+		 padding: 0 15px; 
+	}
 }
 
 
