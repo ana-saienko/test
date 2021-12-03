@@ -17,6 +17,11 @@ if (iconMenu) {
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
+	effect: "fade",
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	 },
 	pagination: {
 		el: ".swiper-pagination",
 		type: "fraction",
