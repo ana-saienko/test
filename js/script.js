@@ -12,3 +12,17 @@ if (iconMenu) {
 		menuBody.classList.toggle('burger-active');
 	});
 }
+
+// Slider HERO
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	pagination: {
+		el: ".swiper-pagination",
+		type: "fraction",
+	 },
+	 navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	 },
+ });

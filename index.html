@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="stylesheets/swiper.min.css" />
     <link rel="stylesheet" href="stylesheets/main.css" />
 
     <!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -134,6 +135,59 @@
       </header>
 
       <main class="page">
+        <div class="hero">
+          <div class="hero__slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slider__bg">
+                    <img src="images/slide-1.jpg" alt="" />
+                  </div>
+                  <div class="slider__card">
+                    <h1 class="slider__card-title">Новинка!</h1>
+                    <h5 class="slider__card-subtitle">Ліжко Ornella</h5>
+                    <p class="slider__card-text">Це новий рівень комфортного сну</p>
+                    <button class="slider__card-btn btn-primary">Детальніше</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__bg">
+                    <img src="images/slide-2.jpg" alt="" />
+                  </div>
+                  <div class="slider__card">
+                    <h1 class="slider__card-title">Новинка!</h1>
+                    <h5 class="slider__card-subtitle">Ліжко Ornella</h5>
+                    <p class="slider__card-text">Це новий рівень комфортного сну</p>
+                    <button class="slider__card-btn btn-primary">Детальніше</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__bg">
+                    <img src="images/slide-3.jpg" alt="" />
+                  </div>
+                  <div class="slider__card">
+                    <h1 class="slider__card-title">Новинка!</h1>
+                    <h5 class="slider__card-subtitle">Ліжко Ornella</h5>
+                    <p class="slider__card-text">Це новий рівень комфортного сну</p>
+                    <button class="slider__card-btn btn-primary">Детальніше</button>
+                  </div>
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+          </div>
+        </div>
+
         <section class="about">
           <div class="container">
             <h2 class="about__title sec-title">Про нас</h2>
@@ -220,13 +274,17 @@
               <div class="grid-left__list--1">
                 <ul class="grid-left__menu">
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> Дивани</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> Дивани</a
+                    >
                   </li>
                   <li class="grid-left__item">
                     <a href="#" class="grid-left__link"><span>—</span> ліжка</a>
                   </li>
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> Крісла</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> Крісла</a
+                    >
                   </li>
                   <li class="grid-left__item">
                     <a href="#" class="grid-left__link"><span>—</span> шафи</a>
@@ -235,7 +293,9 @@
                     <a href="#" class="grid-left__link"><span>—</span> Кухні</a>
                   </li>
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> комоди</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> комоди</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -243,16 +303,23 @@
                 <ul class="grid-left__menu">
                   <li class="grid-left__item">
                     <a href="#" class="grid-left__link">
-                     <span>—</span> АкцІї</a>
+                      <span>—</span> АкцІї</a
+                    >
                   </li>
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> Доставка та оплата</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> Доставка та оплата</a
+                    >
                   </li>
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> про нас</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> про нас</a
+                    >
                   </li>
                   <li class="grid-left__item">
-                    <a href="#" class="grid-left__link"><span>—</span> контакти</a>
+                    <a href="#" class="grid-left__link"
+                      ><span>—</span> контакти</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -261,17 +328,20 @@
                   <svg class="grid-left__icon">
                     <use xlink:href="sprite.svg#location-footer"></use>
                   </svg>
-                  TEST</div>
+                  TEST
+                </div>
                 <div class="grid-left__time">
                   <svg class="grid-left__icon">
                     <use xlink:href="sprite.svg#valendar-footer"></use>
                   </svg>
-                  Пн-Пт, з 10 до 18</div>
+                  Пн-Пт, з 10 до 18
+                </div>
                 <div class="grid-left__phone">
                   <svg class="grid-left__icon grid-left__icon--phone">
                     <use xlink:href="sprite.svg#smartphone"></use>
                   </svg>
-                  (099) 111 22 33 </div>
+                  (099) 111 22 33
+                </div>
                 <div class="grid-left__social">
                   Ми в соціальних мережах:
                   <div>
@@ -290,9 +360,12 @@
             </div>
 
             <div class="grid-left__bottom">
-              <div class="grid-left__copy">© ТОВ Furniture, працюємо з 2006 року</div>
-             <div class="grid-left__design">Глянець — розробка інтернет-магазинів</div>
-              
+              <div class="grid-left__copy">
+                © ТОВ Furniture, працюємо з 2006 року
+              </div>
+              <div class="grid-left__design">
+                Глянець — розробка інтернет-магазинів
+              </div>
             </div>
           </div>
           <div class="footer-grid__right">
@@ -304,6 +377,7 @@
       </footer>
     </div>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
