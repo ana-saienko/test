@@ -1042,20 +1042,33 @@ body.lock {
       grid-template-columns: 0.9fr 1.1fr;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .footer-grid {
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+@media (max-width: 1110px) {
+  .footer-grid {
+    -ms-grid-columns: 1.3fr 0.7fr;
+        grid-template-columns: 1.3fr 0.7fr;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer-grid {
+    -ms-grid-columns: 2fr 0fr;
+        grid-template-columns: 2fr 0fr;
   }
 }
 
 .footer-grid__img {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   padding-bottom: 50%;
+  min-height: 100%;
 }
 
 .footer-grid__img img {
@@ -1068,9 +1081,52 @@ body.lock {
   height: 100%;
 }
 
+@media (max-width: 940px) {
+  .footer-grid__img {
+    display: none;
+  }
+}
+
 .grid-left {
-  padding: 50px 50px 0 50px;
+  padding: 50px 50px 15px 50px;
   background: #1e2e36;
+}
+
+@media (max-width: 570px) {
+  .grid-left {
+    padding: 30px 20px 15px 20px;
+  }
+}
+
+.grid-left__logo {
+  display: block;
+  width: 360px;
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-left__logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 940px) {
+  .grid-left__logo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .grid-left__logo {
+    width: 250px;
+    height: 52px;
+  }
 }
 
 .grid-left__link {
@@ -1083,6 +1139,7 @@ body.lock {
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .grid-left__link span {
@@ -1091,6 +1148,12 @@ body.lock {
 
 .grid-left__link:hover {
   color: #44c697;
+}
+
+@media (max-width: 1680px) {
+  .grid-left__link {
+    font-size: 14px;
+  }
 }
 
 .grid-left__item {
@@ -1109,13 +1172,60 @@ body.lock {
   width: 100%;
 }
 
+@media (max-width: 940px) {
+  .grid-left__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .grid-left__box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .grid-left__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .grid-left__list--1 {
   width: 150px;
   margin-right: 25px;
 }
 
+@media (max-width: 1680px) {
+  .grid-left__list--1 {
+    width: 90px;
+  }
+}
+
 .grid-left__list--2 {
   max-width: 220px;
+  margin-right: 50px;
+}
+
+@media (max-width: 570px) {
+  .grid-left__list--2 {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .grid-left__list--2 {
+    margin-top: 30px;
+  }
 }
 
 .grid-left__icon {
@@ -1137,6 +1247,18 @@ body.lock {
   font-size: 18px;
   line-height: 125%;
   color: #ffffff;
+}
+
+@media (max-width: 1680px) {
+  .grid-left__contacts {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 519px) {
+  .grid-left__contacts {
+    margin-top: 30px;
+  }
 }
 
 .grid-left__phone span {
@@ -1214,6 +1336,38 @@ body.lock {
   font-size: 14px;
   line-height: 120%;
   color: #fff;
+}
+
+@media (max-width: 1680px) {
+  .grid-left__bottom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  .grid-left__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 440px) {
+  .grid-left__bottom {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (max-width: 570px) {
+  .grid-left__copy {
+    margin-bottom: 10px;
+  }
 }
 
 .btn-primary {
